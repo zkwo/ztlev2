@@ -27,4 +27,23 @@
   .liquid-btn:hover {
     @apply text-white;
   }
+
+  /* Animasi untuk Liquid Border di Card */
+  @keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 15s linear infinite; /* Kecepatan putaran border */
+  }
+
+  /* Efek Liquid untuk Teks (menggunakan filter SVG) */
+  .liquid-text {
+    filter: url(#liquid-text-filter);
+  }
+
+  .liquid-badge {
+    filter: url(#liquid-badge-filter);
+  }
 }
