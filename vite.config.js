@@ -3,7 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  build: {
-    minify: 'esbuild', // Sangat disarankan untuk Vercel
-  }
+  build: { minify: 'esbuild' }
 })
